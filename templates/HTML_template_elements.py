@@ -7,20 +7,28 @@ SpiceBucks
 HEADER = '''<!DOCTYPE html>
 <html>
 <head>
+<style>
+table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
 <meta charset="UTF-8">
-<title>Arb Time</title>
+<title>Arbitrage Finder</title>
 </head>
 <body>
-<img src="templates/police.jpg" alt="Don't">'''
+<img src="templates/logo.jpg" alt="Arbitrage Finder">'''
 
 FOOTER = '''</body>
 </html>'''
 
 def make_div(result):
-    ret = "<h1>" + result["Name"] + "</h1> <h2> " + result["Arbitrage Opportunity"] + "</h2> "
-    ret += '<h3> <a href="' + result["Link"] + '"> ' + result["Link"] + '</a> </h3> <br />'
+    ret = "<table style=width:100%> <tr>"
+    ret += "<th><h1>" + result["Name"] + "</h1> <h2> " + result["Arbitrage Opportunity"] + "</h2></th></tr>"
+    ret += '<tr><td><h3> <a href="' + result["Link"] + '"> ' + result["Link"] + '</a> </h3> <br /> </td> </tr>'
     for r in result["Instructions"]:
-        ret += "<span> " + r + "<br /> </span> "
+        ret += "<tr><td><span> " + r + "<br /> </span></td></tr>"
+    ret += "</table>"
     return ret
 
 def make_html(res_list):
