@@ -204,8 +204,8 @@ class CWebCrawler(object):
             file.write(html)
 
         # then beep
-        if not supress:
-            ut.beep('templates/ding.wav')
+    #    if not supress:
+    #        ut.beep('templates/ding.wav')
 
     def _check_results(self):
         links = [r["Link"] for r in self.all_results]
