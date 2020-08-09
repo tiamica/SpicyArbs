@@ -34,7 +34,8 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: |
+    - name: Build the app
+      run: |
         # Execute program to create the result.html
         python main_webscraper.py && git add result.html && git commit -am"Updated results" && git push origin release        
         
