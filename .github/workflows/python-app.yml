@@ -38,4 +38,3 @@ jobs:
       run: |
         # Execute program to create the result.html
         python main_webscraper.py && git add result.html && git commit -am"Updated results" && git push origin release        
-        
