@@ -38,4 +38,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build the Arb and Create the file
       run: |
-         python main_webscraper.py && cp results.html index.html
+         python main_webscraper.py
+         cp results.html index.html
