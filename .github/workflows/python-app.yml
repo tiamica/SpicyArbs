@@ -38,9 +38,11 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Build the Arb and Create the file
       run: |
-         python main_webscraper.py -j5
-         cp results.html index.html
+         python main_webscraper.py -j9
          git config --global user.name "tiamica"
          git config --global user.email "games@tiamica.com"
-         git add .
+         git add results.html 
          git commit -am"Updated to latest results"
+         git checkout release
+         git merge master
+         git push origin release
