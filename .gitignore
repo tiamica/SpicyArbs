@@ -2,4 +2,3 @@
 venv/
 log.txt
 **/__pycache__/
-results.html
