@@ -13,10 +13,11 @@ table, th, tr, td {
   border-collapse: collapse;
   text-align: center;
 }
-img {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
 }
 </style>
 <meta charset="UTF-8">
