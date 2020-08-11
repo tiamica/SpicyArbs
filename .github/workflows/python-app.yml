@@ -45,4 +45,4 @@ jobs:
          git commit -am"Updated to latest results"
          git checkout -b release
          git merge master
-         git push origin release
+         git push -f origin release
