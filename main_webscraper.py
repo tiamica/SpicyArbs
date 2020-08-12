@@ -22,7 +22,7 @@ ODDSCHECKER_HOME = "https://www.oddschecker.com/"
 
 #------------------------------------------------------------------
 
-BET_AMOUNT = 1000
+BET_AMOUNT = 100
 INCLUDE_INPLAY = False
 
 MIN_OPP = 1.03
