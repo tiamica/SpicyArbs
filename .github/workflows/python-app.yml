@@ -5,11 +5,11 @@ name: Python application
 
 #on:
 #  schedule:
- #   - cron: '1 */2 * * *'
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#   - cron: '1 */2 * * *'
+#  push:
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
 
 on:
   workflow_dispatch:
