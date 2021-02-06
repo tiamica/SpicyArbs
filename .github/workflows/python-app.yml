@@ -43,3 +43,10 @@ jobs:
     - name: Build the Arb and Create the file
       run: |
          python main_webscraper.py -j9
+         git config --global user.name "tiamica"
+         git config --global user.email "games@tiamica.com"
+         git add results.html 
+         git commit -am"Updated to latest results"
+         git checkout -b release
+         git merge master
+         git push -f origin release
