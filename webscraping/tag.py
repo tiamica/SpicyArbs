@@ -21,10 +21,10 @@ class CTag():
         '''
         Instantiates class.
         '''
-        if not isinstance(souptag, Tag):
-            message.logError("Given souptag is not a bs4.element.Tag instance.",
-                             "CTag::__init__")
-            ut.exit(0)
+       # if not isinstance(souptag, Tag):
+       #     message.logError("Given souptag is not a bs4.element.Tag instance.",
+       #                      "CTag::__init__")
+       #     ut.exit(0)
         
         self.m_tag = souptag
         name = souptag.getText()
